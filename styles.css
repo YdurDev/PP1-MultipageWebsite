@@ -1,0 +1,49 @@
+/* Constants*/
+
+:root {
+    --NAVY-BLUE: #0A3D62;
+    --OCEAN-BLUE: #3C8DAD;
+    --SEAFOAM: #A6E1FA;
+    --LOBSTER-RED: #C0392B;
+    --PINE-GREEN:#1B4332;
+    --MOSS-GREEN: #2D6A4F;
+    --GRANITE-GRAY:#6C757D;
+}
+
+body {
+    background-color: var(--SEAFOAM);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+header {
+    background-color: var(--OCEAN-BLUE);
+    grid-column: span 2;
+}
+
+section {
+    background-color: var(--NAVY-BLUE);
+    grid-column: span 2;
+}
+
+nav {
+    background-color: var(--LOBSTER-RED);
+}
+
+aside {
+    background-color: var(--MOSS-GREEN);
+    grid-column: 5/5;
+}
+
+#content {
+    grid-column: 2/4;
+}
+
+.nav-link {
+    list-style: none;
+    padding:0;
+}
