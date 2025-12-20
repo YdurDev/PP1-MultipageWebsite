@@ -1,5 +1,7 @@
 /* Constants*/
 
+
+
 :root {
     --NAVY-BLUE: #0A3D62;
     --OCEAN-BLUE: #3C8DAD;
@@ -11,14 +13,24 @@
 }
 
 body {
+    padding:0;
+    margin:0;
     background-color: var(--SEAFOAM);
+    font: normal normal normal 15px Consolas, sans-serif;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto;
+    grid-template-rows: 10vh auto 78vh;
+    row-gap: 1px;
+    column-gap: 2;
     text-align: center;
     justify-content: center;
 }
 
+/*Every direct child of the body, so all of my main components, nav, section etc*/
+body > * {
+    border: 2px solid;
+    border-radius: 10px;
+}
 
 header {
     background-color: var(--OCEAN-BLUE);
@@ -28,22 +40,66 @@ header {
 section {
     background-color: var(--NAVY-BLUE);
     grid-column: span 2;
+    align-content: center;
 }
 
+.img-banner {
+    display: flex;
+    grid-column: 1/5;
+    height:100px;
+    overflow: hidden;
+}
+
+.img-banner img {
+    width: 100%;
+    height:100%;
+}
+
+/*--------------------------NAV---------------------------*/
+
 nav {
-    background-color: var(--LOBSTER-RED);
+    background-color: var(--NAVY-BLUE);
+    grid-row: 3/4;
+}
+
+.nav-links {
+    list-style: none;
+    padding:0px;
+}
+
+.nav-links a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--SEAFOAM);
+    font-size: larger;
 }
 
 aside {
     background-color: var(--MOSS-GREEN);
-    grid-column: 5/5;
+    grid-row: 3/4;
+    grid-column: 4/5;
+    border-style: dashed;
 }
 
 #content {
+    background-color: var(--LOBSTER-RED);
+    grid-row: 3/4;
     grid-column: 2/4;
+    overflow: hidden;
 }
 
-.nav-link {
-    list-style: none;
-    padding:0;
+#content p {
+    font-weight:700;
+    font-size: larger;
+    color: white
 }
+
+#welcome-img {
+    display: flex;
+}
+#welcome-img img {
+    width:900px;
+    height:300px;
+    border-radius: 5px;
+}
+
