@@ -37,10 +37,24 @@ header {
     grid-column: span 2;
 }
 
+header a {
+    text-decoration: none;
+    color:black
+}
+
+.inner-header {
+    background-color: var(--OCEAN-BLUE);
+    grid-column: span 1;
+}
+
 section {
     background-color: var(--NAVY-BLUE);
     grid-column: span 2;
     align-content: center;
+}
+
+.inner-section {
+    grid-column: span 3;
 }
 
 .img-banner {
@@ -79,6 +93,19 @@ aside {
     grid-row: 3/4;
     grid-column: 4/5;
     border-style: dashed;
+    justify-items: center;
+}
+
+#form-button {
+    background-color: #C0392B;
+    border: 1px solid #78251c;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px var(--PINE-GREEN);
+    width: 180px;
+}
+
+#form-button a {
+        text-decoration: none;
 }
 
 #content {
@@ -86,6 +113,7 @@ aside {
     grid-row: 3/4;
     grid-column: 2/4;
     overflow: hidden;
+    justify-items: center;
 }
 
 #content p {
@@ -103,3 +131,34 @@ aside {
     border-radius: 5px;
 }
 
+table {
+    border: 5px solid black;
+    color:white
+
+}
+
+table td {
+
+    border: 1px solid black;
+}
+
+table th {
+    border: 3px dashed black;
+}
+
+#newsletter {
+    background-color: #78251c;
+    display: block;
+    padding:10px;
+    text-align: left;
+}
+
+#newsletter label {
+    width: 1px;
+    text-align: left;
+    padding-right:50px;
+}
+
+#newsletter input {
+    width: 200px;
+}
