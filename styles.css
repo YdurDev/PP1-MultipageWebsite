@@ -148,9 +148,10 @@ table th {
 
 #newsletter {
     background-color: #78251c;
-    display: block;
+    display: grid;
     padding:10px;
     text-align: left;
+    gap:1rem;
 }
 
 #newsletter label {
@@ -162,3 +163,8 @@ table th {
 #newsletter input {
     width: 200px;
 }
+
+input {
+    width: 1000px;
+}
+
